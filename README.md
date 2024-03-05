@@ -13,16 +13,30 @@ npm install --save react-list-section
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
 
-import MyComponent from 'react-list-section'
+
 import 'react-list-sectionlist/dist/index.css'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
-}
+import React from "react";
+import SectionList from "react-list-section";
+
+// Hero Feature Content Carousel
+
+const Home = () => {
+  return (
+    <>
+      <SectionList
+        sections={[{ data: [{ id: 5 }], title: "abcd" }]}
+        renderSectionHeader={(a) => <div>{a.title}</div>}
+        renderItem={(el) => <div>{el.id}</div>}
+      />
+    </>
+  );
+};
+
+export default Home;
+
 ```
 
 ## License
