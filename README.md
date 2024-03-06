@@ -21,8 +21,6 @@ import 'react-list-sectionlist/dist/index.css'
 import React from "react";
 import SectionList from "react-list-section";
 
-// Hero Feature Content Carousel
-
 const Home = () => {
   return (
     <>
